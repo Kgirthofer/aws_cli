@@ -26,11 +26,3 @@ windows_package 'AWS Command Line Interface' do
   version '1.7.39'
   action :install
 end
-
-cookbook_file 'cacert.pem' do
-  path 'C:\Program Files\Amazon\AWSCLI\botocore\vendored\requests\cacert.pem'
-  source 'cacert.pem'
-  action :create
-  sensitive true
-end
-
