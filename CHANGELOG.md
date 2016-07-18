@@ -1,3 +1,3 @@
 # 0.1.0
 
-Initial release of delphic_aws
+Initial release of aws_cli

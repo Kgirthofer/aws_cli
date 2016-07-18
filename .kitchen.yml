@@ -17,7 +17,7 @@ driver:
   security_group_ids:   <%= config.security_group_ids %>
   retry_limit:		20
   subnet_id:            <%= config.private_subnet_id %>
-<%= config.tags("delphic_aws", user, 'Linux', '24h') %>
+<%= config.tags("aws_cli", user, 'Linux', '24h') %>
 
 driver_config:
     name:                ec2
@@ -43,7 +43,6 @@ platforms:
 suites:
   - name: default
     # use these if you require encrypted data bags:  Setup a submodule:
-    # %> git submodule add ssh://git@bitbucket.org:22/delphicdigitaldevops/chef_repo.git
     # then uncoment the below lines:
     # data_bags_path: "chef_repo/test/data_bags"
     # encrypted_data_bag_secret_key_path: "chef_repo/test/secret"
@@ -53,9 +52,9 @@ suites:
     # %> rm -rf .git/modules/chef_repo
     run_list:
       # use this if you are building an application cookbook, and comment out
-      # the recipe.  Make sure you add roles/delphic_aws.json, and the
-      # attribute: default['application'] = 'delphic_aws' to
+      # the recipe.  Make sure you add roles/aws_cli.json, and the
+      # attribute: default['application'] = 'aws_cli' to
       # attributes/default.rb too.
-      # - role[delphic_aws]
-      - recipe[delphic_aws::default]
+      # - role[aws_cli]
+      - recipe[aws_cli::default]
     attributes:

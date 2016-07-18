@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: delphic_aws
+# Cookbook Name:: aws_cli
 # Recipe:: default
 #
 # Copyright (C) 2016 Karl Girthofer
@@ -56,4 +56,4 @@ directory 'aws build delete' do
   action :delete
 end
 
-include_recipe 'delphic_aws::audit' if respond_to? :control_group
+include_recipe 'aws_cli::audit' if respond_to? :control_group

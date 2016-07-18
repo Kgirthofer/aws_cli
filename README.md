@@ -1,4 +1,4 @@
-# delphic_aws-cookbook
+# aws_cli-cookbook
 
 TODO: Enter the cookbook description here.
 
@@ -16,7 +16,7 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['delphic_aws']['bacon']</tt></td>
+    <td><tt>['aws_cli']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ TODO: List your supported platforms.
 
 ## Usage
 
-### delphic_aws::default
+### aws_cli::default
 
-Include `delphic_aws` in your node's `run_list`:
+Include `aws_cli` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[delphic_aws::default]"
+    "recipe[aws_cli::default]"
   ]
 }
 ```

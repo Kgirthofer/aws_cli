@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'delphic_aws::default' do
+describe 'aws_cli::default' do
   subject { default_chef_run }
 
   before :each do
@@ -26,5 +26,5 @@ describe 'delphic_aws::default' do
     )
   end
 
-  it { is_expected.to include_recipe 'delphic_aws::audit' }
+  it { is_expected.to include_recipe 'aws_cli::audit' }
 end
