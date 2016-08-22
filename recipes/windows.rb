@@ -1,10 +1,6 @@
 #
-# Cookbook Name:: radian_aws_cli
-# Recipe:: default
-#
-# Copyright (C) 2014 YOUR_NAME
-#
-# All rights reserved - Do Not Redistribute
+# Cookbook Name:: aws_cli
+# Recipe:: windows.rb
 #
 directory 'C:\Temp\aws-cli' do
   group 'administrators'
